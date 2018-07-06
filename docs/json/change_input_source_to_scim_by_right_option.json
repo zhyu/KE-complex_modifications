@@ -1,0 +1,33 @@
+{
+  "title": "Change input source to SCIM by right_option",
+  "rules": [
+    {
+      "description": "Change input source to SCIM by right_option",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "input_source_id": "^com\\.apple\\.inputmethod\\.SCIM.ITABC$"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

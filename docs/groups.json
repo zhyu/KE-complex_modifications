@@ -272,6 +272,9 @@
         },
         {
           "path": "json/norwegian_programming.json"
+        },
+        {
+          "path": "json/change_input_source_to_scim_by_right_option.json"
         }
       ]
     },
